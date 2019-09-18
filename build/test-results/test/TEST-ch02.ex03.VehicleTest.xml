@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ch02.ex03.VehicleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-17T12:16:36" hostname="A050952570" time="0.012">
+  <properties/>
+  <testcase name="vehicleId" classname="ch02.ex03.VehicleTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
