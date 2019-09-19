@@ -14,6 +14,6 @@ public class LinkedListTest {
         LinkedList head = new LinkedList("head");
         LinkedList next = new LinkedList("next");
         head.add(next);
-        Assert.assertEquals(head.getNextNord().getData(), "next");
+        Assert.assertEquals(head.getNextNode().getData(), "next");
     }
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ch02.ex14.LinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-19T08:14:46" hostname="A050952570" time="0.005">
+  <properties/>
+  <testcase name="setNextNode" classname="ch02.ex14.LinkedListTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
