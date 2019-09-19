@@ -12,25 +12,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ch02/ex15/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ch02/ex15/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ch02/ex16/LinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ch02/ex16/LinkedList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ch02/ex16/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ch02/ex16/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ch02/ex17/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ch02/ex17/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ch02/ex18/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ch02/ex18/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ch02/ex18/VehicleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ch02/ex18/VehicleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ch02.ex14.LinkedListTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ch02.ex09.VehicleTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ch02.ex14.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ch02.ex14.LinkedListTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ch02.ex09.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ch02.ex09.VehicleTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch02/ex16/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch02/ex16/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch02/ex17/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch02/ex17/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch02/ex18/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch02/ex18/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ch02/ex18/VehicleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch02/ex18/VehicleTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +46,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
@@ -85,19 +73,19 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch01.ex16" />
+      <recent name="ch01.ex15" />
+      <recent name="ch01.ex14" />
+      <recent name="ch01.ex08" />
       <recent name="ch02.ex17" />
-      <recent name="ch02.ex16" />
-      <recent name="ch02.ex15" />
-      <recent name="ch02.ex14" />
-      <recent name="ch02.ex13" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ch02.ex18" />
       <recent name="ch02.ex03" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -112,13 +100,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.VehicleTest">
-    <configuration name="LinkedListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.MyUtilitiesTest">
+    <configuration name="MyUtilitiesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch02.ex06.LinkedListTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch01.ex16.MyUtilitiesTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -133,12 +121,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LinkedListTest.toStringTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MyUtilitiesTest.addFind" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch02.ex16.LinkedListTest.toStringTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch01.ex16.MyUtilitiesTest.addFind&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -153,12 +141,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="VehicleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SimpleLookupOperationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch02.ex09.VehicleTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch01.ex15.SimpleLookupOperationTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -173,12 +161,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="VehicleTest.mainTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SimpleLookupOperationTest.remove" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch02.ex18.VehicleTest.mainTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch01.ex15.SimpleLookupOperationTest.remove&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -193,12 +181,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="VehicleTest.turnConst" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WalkmanCommunicationTest.communicate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch02.ex17.VehicleTest.turnConst&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch01.ex14.WalkmanCommunicationTest.communicate&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -215,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.VehicleTest" />
-        <item itemvalue="Gradle.VehicleTest" />
-        <item itemvalue="Gradle.LinkedListTest" />
-        <item itemvalue="Gradle.VehicleTest" />
-        <item itemvalue="Gradle.VehicleTest" />
+        <item itemvalue="Gradle.MyUtilitiesTest" />
+        <item itemvalue="Gradle.MyUtilitiesTest.addFind" />
+        <item itemvalue="Gradle.SimpleLookupOperationTest" />
+        <item itemvalue="Gradle.SimpleLookupOperationTest.remove" />
+        <item itemvalue="Gradle.WalkmanCommunicationTest.communicate" />
       </list>
     </recent_temporary>
   </component>
