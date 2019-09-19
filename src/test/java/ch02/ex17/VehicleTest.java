@@ -1,4 +1,4 @@
-package ch02.ex18;
+package ch02.ex17;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -7,12 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VehicleTest {
-    // assert する方法が分からなかったため，ここは目視しました．
-    @Test
-    public void mainTest() throws Exception {
-        Vehicle.main(new String[] {"John", "Mike", "Bob"});
-    }
-
     @Test
     public void turnConst() {
         Vehicle v1 = new Vehicle(50, 30, "john");
