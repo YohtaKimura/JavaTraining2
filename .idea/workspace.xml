@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex01/PassengerVehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex01/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch03/ex01/PassengerVehicleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -12,12 +15,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ch02.ex09.VehicleTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ch01.ex16.MyUtilitiesTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ch02.ex09.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ch02.ex09.VehicleTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ch01.ex16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ch01.ex16.MyUtilitiesTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch02/ex02/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch02/ex02/LinkedListTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +52,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -58,34 +64,38 @@
   <component name="ProjectId" id="1QxfwzlfJqVylWpTf7n2I5Ub017" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch03.ex01" />
       <recent name="ch01.ex16" />
       <recent name="ch01.ex15" />
       <recent name="ch01.ex14" />
       <recent name="ch01.ex08" />
-      <recent name="ch02.ex17" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ch02.ex18" />
-      <recent name="ch02.ex03" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch03.ex01" />
+      <recent name="ch02.ex18" />
+      <recent name="ch02.ex03" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,13 +110,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.MyUtilitiesTest">
-    <configuration name="MyUtilitiesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.PassengerVehicleTest.errorGetOn">
+    <configuration name="HelloWorldTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch01.ex16.MyUtilitiesTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch01.ex01.HelloWorldTest&quot; --stacktrace" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -121,12 +131,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MyUtilitiesTest.addFind" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PassengerVehicleTest.errorGetOn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch01.ex16.MyUtilitiesTest.addFind&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex01.PassengerVehicleTest.errorGetOn&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -141,12 +151,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SimpleLookupOperationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PassengerVehicleTest.getNumberOfPassenger" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch01.ex15.SimpleLookupOperationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex01.PassengerVehicleTest.getNumberOfPassenger&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -161,12 +171,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SimpleLookupOperationTest.remove" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PassengerVehicleTest.getOn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch01.ex15.SimpleLookupOperationTest.remove&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex01.PassengerVehicleTest.getOn&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -181,12 +191,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WalkmanCommunicationTest.communicate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="VehicleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch01.ex14.WalkmanCommunicationTest.communicate&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch02.ex18.VehicleTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -203,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MyUtilitiesTest" />
-        <item itemvalue="Gradle.MyUtilitiesTest.addFind" />
-        <item itemvalue="Gradle.SimpleLookupOperationTest" />
-        <item itemvalue="Gradle.SimpleLookupOperationTest.remove" />
-        <item itemvalue="Gradle.WalkmanCommunicationTest.communicate" />
+        <item itemvalue="Gradle.PassengerVehicleTest.errorGetOn" />
+        <item itemvalue="Gradle.PassengerVehicleTest.getOn" />
+        <item itemvalue="Gradle.PassengerVehicleTest.getNumberOfPassenger" />
+        <item itemvalue="Gradle.VehicleTest" />
+        <item itemvalue="Gradle.HelloWorldTest" />
       </list>
     </recent_temporary>
   </component>

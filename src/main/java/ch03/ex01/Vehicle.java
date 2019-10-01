@@ -1,9 +1,9 @@
-package ch02.ex18;
+package ch03.ex01;
 
 import java.io.PrintStream;
 import java.util.*;
 
-final public class Vehicle {
+class Vehicle {
     // 基本的に private にできるフィールドはした方がいいと思います．
     static private List<Integer> VEHICLE_ID_LIST = new ArrayList<>();
     public static final String TURN_LEFT = "left";
