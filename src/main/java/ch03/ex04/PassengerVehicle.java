@@ -1,4 +1,4 @@
-package ch03.ex01;
+package ch03.ex04;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ class PassengerVehicle extends Vehicle{
         vList.stream().forEach(e -> System.out.println(e.toString()));
     }
 
-    static List<PassengerVehicle> getPassengerVehiclesList() {
+    final static List<PassengerVehicle> getPassengerVehiclesList() {
         return new ArrayList<PassengerVehicle>(){{
                 add(new PassengerVehicle());
                 final PassengerVehicle v2 = new PassengerVehicle();
@@ -27,15 +27,15 @@ class PassengerVehicle extends Vehicle{
         numberOfCurrentPassenger = 0;
     }
 
-    public int getNumberOfSeat() {
+    final public int getNumberOfSeat() {
         return this.NUMBER_OF_SEATS;
     }
 
-    private void setNumberOfCurrentPassenger(final int currentPassenger) {
+    final private void setNumberOfCurrentPassenger(final int currentPassenger) {
         this.numberOfCurrentPassenger = currentPassenger;
     }
 
-    public int getNumberOfCurrentPassenger() {
+    final public int getNumberOfCurrentPassenger() {
         return this.numberOfCurrentPassenger;
     }
 
