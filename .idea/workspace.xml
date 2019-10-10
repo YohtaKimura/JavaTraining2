@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex02/Output.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex02/X.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex02/XInserted.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex02/Y.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex02/YInserted.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex03/answer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex04/PassengerVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex04/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex05/AnotherBenchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex05/Benchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch03/ex05/AnotherBenchmarkTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch03/ex05/BenchmarkTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex06/Battery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex06/EnergySource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex06/GasTank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex06/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch03/ex06/VehicleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -22,10 +15,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch03/ex01/PassengerVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch03/ex01/PassengerVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ch03/ex01/PassengerVehicleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch03/ex01/PassengerVehicleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch03/ex05/AnotherBenchmarkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch03/ex05/AnotherBenchmarkTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,25 +75,26 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch03.ex06" />
       <recent name="ch03.ex05" />
       <recent name="ch03.ex01" />
       <recent name="ch01.ex16" />
       <recent name="ch01.ex15" />
-      <recent name="ch01.ex14" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ch03.ex04" />
-      <recent name="ch03.ex02" />
-      <recent name="ch03.ex01" />
-      <recent name="ch02.ex18" />
-      <recent name="ch02.ex03" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch03.ex06" />
+      <recent name="ch03.ex04" />
+      <recent name="ch03.ex02" />
+      <recent name="ch03.ex01" />
+      <recent name="ch02.ex18" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -115,39 +109,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AnotherBenchmark">
-    <configuration name="AnotherBenchmark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch03.ex05.AnotherBenchmark" />
-      <module name="jpl.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ch03.ex05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="YInserted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch03.ex02.YInserted" />
-      <module name="jpl.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ch03.ex02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PassengerVehicleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.VehicleTest.canStartWhenEnergySourceIsBattery">
+    <configuration name="AnotherBenchmarkTest.checkIterator" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch03.ex01.PassengerVehicleTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex05.AnotherBenchmarkTest.checkIterator&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -162,12 +130,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PassengerVehicleTest.errorGetOn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AnotherBenchmarkTest.checkMain" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch03.ex01.PassengerVehicleTest.errorGetOn&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex05.AnotherBenchmarkTest.checkMain&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -182,12 +150,52 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PassengerVehicleTest.getPassengerVehiclesList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AnotherBenchmarkTest.getNumberOfPassenger" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch03.ex01.PassengerVehicleTest.getPassengerVehiclesList&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex05.AnotherBenchmarkTest.getNumberOfPassenger&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="VehicleTest.canStart" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex06.VehicleTest.canStart&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="VehicleTest.canStartWhenEnergySourceIsBattery" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex06.VehicleTest.canStartWhenEnergySourceIsBattery&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -204,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AnotherBenchmark" />
-        <item itemvalue="Application.YInserted" />
-        <item itemvalue="Gradle.PassengerVehicleTest.getPassengerVehiclesList" />
-        <item itemvalue="Gradle.PassengerVehicleTest" />
-        <item itemvalue="Gradle.PassengerVehicleTest.errorGetOn" />
+        <item itemvalue="Gradle.VehicleTest.canStartWhenEnergySourceIsBattery" />
+        <item itemvalue="Gradle.VehicleTest.canStart" />
+        <item itemvalue="Gradle.AnotherBenchmarkTest.checkMain" />
+        <item itemvalue="Gradle.AnotherBenchmarkTest.checkIterator" />
+        <item itemvalue="Gradle.AnotherBenchmarkTest.getNumberOfPassenger" />
       </list>
     </recent_temporary>
   </component>
