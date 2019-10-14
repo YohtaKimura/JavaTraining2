@@ -2,16 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex08/PassengerVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex08/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex09/Garage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex09/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex10/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex11/SimpleSortDouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex11/SortMetrics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex12/SImpleSortHarness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex12/SortHarness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex12/SortMetrics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex01/Battery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex01/EnergySource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex01/GasTank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex01/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex02/SimpleSortHarness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex02/SortHarness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex02/SortMetrics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch03/ex10/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch03/ex12/SimpleSortHarnessTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch03/ex09/Garage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch03/ex09/Garage.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +60,8 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -72,18 +90,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch03.ex12" />
+      <recent name="ch03.ex10" />
       <recent name="ch03.ex07" />
       <recent name="ch03.ex06" />
       <recent name="ch03.ex05" />
-      <recent name="ch03.ex01" />
-      <recent name="ch01.ex16" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch04.ex01" />
+      <recent name="ch03.ex12" />
+      <recent name="ch03.ex10" />
       <recent name="ch03.ex09" />
       <recent name="ch03.ex08" />
-      <recent name="ch03.ex06" />
-      <recent name="ch03.ex04" />
-      <recent name="ch03.ex02" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -102,13 +120,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ColorAttrTest">
-    <configuration name="ColorAttrTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SimpleSortHarnessTest.sortTest">
+    <configuration name="LinkedListTest.cloneDependencyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch03.ex07.ColorAttrTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex10.LinkedListTest.cloneDependencyTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -123,12 +141,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ColorAttrTest.cannotStartWhenEnergySourceIsGauTank" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LinkedListTest.cloneReferenceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch03.ex07.ColorAttrTest.cannotStartWhenEnergySourceIsGauTank&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex10.LinkedListTest.cloneReferenceTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -143,12 +161,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ColorAttrTest.equalsSucceed" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LinkedListTest.cloneTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch03.ex07.ColorAttrTest.equalsSucceed&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex10.LinkedListTest.cloneTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -163,12 +181,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ColorAttrTest.hashCodeReturnSameValue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SimpleSortHarnessTest.cloneReferenceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch03.ex07.ColorAttrTest.hashCodeReturnSameValue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex12.SimpleSortHarnessTest.cloneReferenceTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -183,12 +201,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="VehicleTest.canStartWhenEnergySourceIsBattery" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SimpleSortHarnessTest.sortTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch03.ex06.VehicleTest.canStartWhenEnergySourceIsBattery&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch03.ex12.SimpleSortHarnessTest.sortTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -205,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ColorAttrTest" />
-        <item itemvalue="Gradle.ColorAttrTest.hashCodeReturnSameValue" />
-        <item itemvalue="Gradle.ColorAttrTest.equalsSucceed" />
-        <item itemvalue="Gradle.ColorAttrTest.cannotStartWhenEnergySourceIsGauTank" />
-        <item itemvalue="Gradle.VehicleTest.canStartWhenEnergySourceIsBattery" />
+        <item itemvalue="Gradle.SimpleSortHarnessTest.sortTest" />
+        <item itemvalue="Gradle.SimpleSortHarnessTest.cloneReferenceTest" />
+        <item itemvalue="Gradle.LinkedListTest.cloneDependencyTest" />
+        <item itemvalue="Gradle.LinkedListTest.cloneReferenceTest" />
+        <item itemvalue="Gradle.LinkedListTest.cloneTest" />
       </list>
     </recent_temporary>
   </component>
