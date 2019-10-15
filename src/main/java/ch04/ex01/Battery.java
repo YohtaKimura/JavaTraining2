@@ -7,7 +7,7 @@ class Battery extends EnergySource{
         currentVolume = MAX_VOLUME;
     }
     @Override
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return currentVolume == 0;
     }
 
@@ -15,7 +15,7 @@ class Battery extends EnergySource{
         currentVolume = MAX_VOLUME;
     }
 
-    void use(int usage) {
+    public void use(int usage) {
         if (currentVolume - usage < 0) {
             throw new IllegalArgumentException("Too use to done your task");
         }

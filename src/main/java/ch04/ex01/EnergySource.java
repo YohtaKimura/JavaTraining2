@@ -1,16 +1,16 @@
 package ch04.ex01;
 
-abstract class EnergySource {
+abstract class EnergySource implements IEnergySource{
     final static int MAX_VOLUME = 100;
     int currentVolume;
 
-    abstract boolean isEmpty();
+    abstract public boolean isEmpty();
 
-    void fillMax() {
+    public void fillMax() {
         currentVolume = MAX_VOLUME;
     }
 
-    void use(int usage) {
+    public void use(int usage) {
         if (currentVolume - usage < 0) {
             throw new IllegalArgumentException("Too use to done your task");
         }

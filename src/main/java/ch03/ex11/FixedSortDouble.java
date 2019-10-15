@@ -1,13 +1,18 @@
 package ch03.ex11;
 
-abstract class SortDouble {
+abstract class FixedSortDouble {
     private double[] values;
     private final SortMetrics curMetrics = new SortMetrics();
+    private boolean isProcessing = false;
 
     /** 全ソートをするために呼び出される */
     public final SortMetrics sort(double[] data) {
+        if (isProcessing == true) {
+            throw new IllegalStateException("sort method is called from illegal location");
+        }
         values = data;
         curMetrics.init();
+        isProcessing = true;
         doSort();
         return getMetrics();
     }
