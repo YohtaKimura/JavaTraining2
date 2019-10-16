@@ -38,7 +38,7 @@ public class BankAccount {
         }
 
         public Action next() {
-            if (currentIndex == 10) {
+            if (currentIndex == history.size()) {
                 return null;
             }
             final Action returnAction = history.get(currentIndex);
@@ -52,7 +52,7 @@ public class BankAccount {
     }
 
     public History history() {
-        return history;
+        return this.history;
     }
 
     public void deposit(long amount) {

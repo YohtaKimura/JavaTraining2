@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex11/FixedSortDouble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch03/ex11/answer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex01/IEnergySource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex03/ILinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex03/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex05/answer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch04/ex06/answer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch05/ex01/answer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch05/ex02/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch03/ex11/SimpleSortDoubleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch04/ex01/VehicleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch04/ex02/SimpleSortHarnessTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch04/ex03/LinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -26,11 +13,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch03/ex11/SimpleSortDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch03/ex11/SimpleSortDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch03/ex11/SortDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch03/ex11/SortDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch04/ex01/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch04/ex01/Battery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch04/ex01/EnergySource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch04/ex01/EnergySource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch04/ex01/GasTank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch04/ex01/GasTank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch05/ex02/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch05/ex02/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch05/ex02/BankAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch05/ex02/BankAccountTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +105,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.BankAccountTest.bankAccountTest">
+  <component name="RunManager" selected="Gradle.BankAccountTest.bankAccountNextTest">
+    <configuration name="BankAccountTest.bankAccountNextTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ch05.ex02.BankAccountTest.bankAccountNextTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="BankAccountTest.bankAccountTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -148,26 +152,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;ch04.ex03.LinkedListTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SimpleSortDoubleTest.sortTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch03.ex11.SimpleSortDoubleTest.sortTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -224,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BankAccountTest.bankAccountNextTest" />
         <item itemvalue="Gradle.BankAccountTest.bankAccountTest" />
         <item itemvalue="Gradle.LinkedListTest" />
         <item itemvalue="Gradle.SimpleSortHarnessTest.sortTest" />
         <item itemvalue="Gradle.VehicleTest" />
-        <item itemvalue="Gradle.SimpleSortDoubleTest.sortTest" />
       </list>
     </recent_temporary>
   </component>
