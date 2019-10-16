@@ -1,4 +1,4 @@
-package ch02.ex17;
+package ch06.ex02;
 
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -9,8 +9,6 @@ import java.util.Objects;
 final class Vehicle {
     // 基本的に private にできるフィールドはした方がいいと思います．
     static private List<Integer> VEHICLE_ID_LIST = new ArrayList<>();
-    public static final String TURN_LEFT = "left";
-    public static final String TURN_RIGHT = "right";
     static private int VEHICLE_ID = 0;
 
     final private int carId;
@@ -105,11 +103,12 @@ final class Vehicle {
     }
 
     // 引数として定数を受け取るメソッド
-    public void turn(String direction) {
-        if (Objects.equals(direction, Vehicle.TURN_LEFT)) {
+    public void turn(TurnDirection direction) {
+        // equals の書き方は出来る限り一貫すべき．Singleton でも．
+        if (Objects.equals(direction, TurnDirection.TURN_LEFT)) {
             setDirection(-90);
         }
-        if (Objects.equals(direction, Vehicle.TURN_RIGHT)) {
+        if (Objects.equals(direction, TurnDirection.TURN_RIGHT)) {
             setDirection(90);
         }
     }
