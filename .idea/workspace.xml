@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch07/ex01/UnicodeHelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch07/ex02/DifferentLiteral.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch07/ex03/PascalsTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch07/ex03/PascalsTriangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch03/ex07/ColorAttr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch03/ex07/ColorAttr.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,9 +46,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Class" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
@@ -61,15 +74,19 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch07.ex03" />
       <recent name="ch06.ex05" />
       <recent name="ch06.ex04" />
       <recent name="ch06.ex02" />
       <recent name="ch05.ex02" />
-      <recent name="ch04.ex02" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ch06.ex05" />
@@ -77,10 +94,6 @@
       <recent name="ch06.ex02" />
       <recent name="ch04.ex03" />
       <recent name="ch04.ex02" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -95,13 +108,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TrafficLightsTest.getColorTest">
-    <configuration name="BankAccountTest.bankAccountNextTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.PascalsTriangleTest.pascalsTrianglePrint">
+    <configuration name="DifferentLiteral" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch07.ex02.DifferentLiteral" />
+      <module name="jpl.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch07.ex02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnicodeHelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch07.ex01.UnicodeHelloWorld" />
+      <module name="jpl.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch07.ex01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PascalsTriangleTest.factTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch05.ex02.BankAccountTest.bankAccountNextTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch07.ex03.PascalsTriangleTest.factTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -116,12 +155,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BankAccountTest.bankAccountTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PascalsTriangleTest.pascalsTriangle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch05.ex02.BankAccountTest.bankAccountTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch07.ex03.PascalsTriangleTest.pascalsTriangle&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -136,52 +175,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TrafficLightsTest.getColorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PascalsTriangleTest.pascalsTrianglePrint" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch06.ex05.TrafficLightsTest.getColorTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="VehicleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch02.ex17.VehicleTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="VehicleTest.turnConst" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch06.ex02.VehicleTest.turnConst&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch07.ex03.PascalsTriangleTest.pascalsTrianglePrint&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -198,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TrafficLightsTest.getColorTest" />
-        <item itemvalue="Gradle.TrafficLightsTest.getColorTest" />
-        <item itemvalue="Gradle.VehicleTest.turnConst" />
-        <item itemvalue="Gradle.VehicleTest" />
-        <item itemvalue="Gradle.BankAccountTest.bankAccountNextTest" />
+        <item itemvalue="Gradle.PascalsTriangleTest.pascalsTrianglePrint" />
+        <item itemvalue="Gradle.PascalsTriangleTest.pascalsTriangle" />
+        <item itemvalue="Gradle.PascalsTriangleTest.factTest" />
+        <item itemvalue="Application.DifferentLiteral" />
+        <item itemvalue="Application.UnicodeHelloWorld" />
       </list>
     </recent_temporary>
   </component>
