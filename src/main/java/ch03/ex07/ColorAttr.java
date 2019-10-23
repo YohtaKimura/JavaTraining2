@@ -49,8 +49,8 @@ class ColorAttr extends Attr {
 
     @Override
     public boolean equals(Object o) {
-        if (! obj instanceof ColorAttr) {
-            return false
+        if (!(o instanceof ColorAttr)) {
+            return false;
         }
         final ColorAttr castedComparison = (ColorAttr) o;
         if (!Objects.equals(this.myColor, castedComparison.getColor())) {
