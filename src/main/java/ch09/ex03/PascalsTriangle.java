@@ -1,4 +1,4 @@
-package ch07.ex03;
+package ch09.ex03;
 
 import java.util.Arrays;
 
@@ -11,7 +11,7 @@ class PascalsTriangle {
                 int innerArrayIndex = j - 1;
                 row[innerArrayIndex] = fact(i -1 ) / (fact(j - 1) * fact(i - j));
             }
-            int outerArrayIndex = i -1;
+            int outerArrayIndex = i - 1;
             pascalsTriangle[outerArrayIndex] = row;
         }
         return pascalsTriangle;
@@ -20,7 +20,7 @@ class PascalsTriangle {
     public static int fact(final int n) {
         int r = 1;
         for (int i = 2; i <= n; i++) {
-            r *= i;
+            r *= i; // 本当はこの設問でこことか直すはずだった？
         }
         return r;
     }
