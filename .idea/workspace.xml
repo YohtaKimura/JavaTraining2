@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch10/ex01/StringInJava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch10/ex02/StringInJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch10/ex03/WorkDay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch10/ex01/StringInJavaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,22 +88,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch10.ex01" />
       <recent name="ch07.ex03" />
       <recent name="ch06.ex05" />
       <recent name="ch06.ex04" />
       <recent name="ch06.ex02" />
-      <recent name="ch05.ex02" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ch09.ex03" />
-      <recent name="ch06.ex05" />
-      <recent name="ch06.ex04" />
-      <recent name="ch06.ex02" />
-      <recent name="ch04.ex03" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch10.ex02" />
+      <recent name="ch09.ex03" />
+      <recent name="ch06.ex05" />
+      <recent name="ch06.ex04" />
+      <recent name="ch06.ex02" />
     </key>
   </component>
   <component name="RunDashboard">
