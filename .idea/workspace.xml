@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch10/ex02/StringInJava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch10/ex03/WorkDay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch10/ex01/StringInJavaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch09/ex04/PascalsTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch10/ex04/PascalsTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch10/ex04/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch10/ex04/answer.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch10/ex03/WorkDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch10/ex03/WorkDay.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,16 +96,19 @@
       <recent name="ch06.ex04" />
       <recent name="ch06.ex02" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch09.ex04" />
+      <recent name="ch10.ex04" />
+      <recent name="ch10.ex02" />
+      <recent name="ch09.ex03" />
+      <recent name="ch06.ex05" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ch10.ex02" />
-      <recent name="ch09.ex03" />
-      <recent name="ch06.ex05" />
-      <recent name="ch06.ex04" />
-      <recent name="ch06.ex02" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch10\ex04" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -118,7 +123,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.JavaTraining2 [dependencies]">
+  <component name="RunManager" selected="Application.Square">
     <configuration name="Check" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ch09.ex04.Check" />
       <module name="jpl.main" />
@@ -138,6 +143,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ch09.ex02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Square" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch10.ex04.Square" />
+      <module name="jpl.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch10.ex04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -183,33 +201,13 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PascalsTriangleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch07.ex03.PascalsTriangleTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Square" />
         <item itemvalue="Gradle.JavaTraining2 [dependencies]" />
         <item itemvalue="Application.Check" />
         <item itemvalue="Application.Infinity" />
         <item itemvalue="Gradle.JavaTraining2 [test]" />
-        <item itemvalue="Gradle.PascalsTriangleTest" />
       </list>
     </recent_temporary>
   </component>
