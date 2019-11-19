@@ -1,0 +1,11 @@
+ネストしたジェネリクスは型安全が破られる？もっと具体的に言及したい……．
+https://stackoverflow.com/questions/22806202/java-nested-generic-type
+とか？あまり理解できていない．
+
+以下 Attributed インターフェース
+public interface Attributed {
+    void add(Attr newAttr);
+    Attr find(String attrName);
+    Attr remove(String attrName);
+    java.util.Iterator<Attr> attrs();
+}

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch11/ex02/Attr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch11/ex02/ColorAttr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch11/ex02/ColorAttrTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch11/answer.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch11/ex02/ColorAttrTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch11/ex02/ColorAttrTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

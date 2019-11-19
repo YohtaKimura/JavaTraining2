@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ColorAttrTest {
+    // ジェネリックでも動きますね
     @Test
     public void equalsSucceed() throws Exception {
         final ColorAttr colorAttr1 = new ColorAttr("red", "red");
