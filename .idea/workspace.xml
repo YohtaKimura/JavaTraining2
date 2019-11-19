@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch11/ex01/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch11/ex02/Attr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch11/ex02/ColorAttr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch11/ex02/ColorAttrTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,18 +88,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch11.ex02" />
       <recent name="ch11.ex01" />
       <recent name="ch10.ex05" />
       <recent name="ch10.ex01" />
       <recent name="ch07.ex03" />
-      <recent name="ch06.ex05" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch11.ex02" />
       <recent name="ch11.ex01" />
       <recent name="ch09.ex04" />
       <recent name="ch10.ex04" />
       <recent name="ch10.ex02" />
-      <recent name="ch09.ex03" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -124,20 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.LinkedListTest">
-    <configuration name="BetweenChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch10.ex05.BetweenChar" />
-      <module name="jpl.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ch10.ex05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.ColorAttrTest">
     <configuration name="BetweenCharTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -164,6 +153,26 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;ch10.ex05.BetweenCharTest.CharTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ColorAttrTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ch11.ex02.ColorAttrTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -220,11 +229,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ColorAttrTest" />
         <item itemvalue="Gradle.LinkedListTest" />
         <item itemvalue="Gradle.BetweenCharTest.CharTest" />
         <item itemvalue="Gradle.BetweenCharTest" />
         <item itemvalue="Gradle.PascalsTriangleTest.factTest" />
-        <item itemvalue="Application.BetweenChar" />
       </list>
     </recent_temporary>
   </component>
