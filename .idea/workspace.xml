@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch11/answer.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch12/ILinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch12/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch12/ObjectNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ch11/ex02/ColorAttrTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch11/ex02/ColorAttrTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch11/answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch11/ex03/answer.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +59,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,7 +81,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ch12" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -87,11 +89,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch12" />
       <recent name="ch11.ex02" />
       <recent name="ch11.ex01" />
       <recent name="ch10.ex05" />
       <recent name="ch10.ex01" />
-      <recent name="ch07.ex03" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch12" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ch11.ex02" />
@@ -100,11 +109,8 @@
       <recent name="ch10.ex04" />
       <recent name="ch10.ex02" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch11\ex03" />
       <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch10\ex04" />
     </key>
   </component>
@@ -125,27 +131,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ColorAttrTest">
-    <configuration name="BetweenCharTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch10.ex05.BetweenCharTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.LinkedListTest.testFindException">
     <configuration name="BetweenCharTest.CharTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -206,12 +192,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PascalsTriangleTest.factTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LinkedListTest.testFind" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch07.ex03.PascalsTriangleTest.factTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch12.LinkedListTest.testFind&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LinkedListTest.testFindException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ch12.LinkedListTest.testFindException&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -228,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LinkedListTest.testFindException" />
+        <item itemvalue="Gradle.LinkedListTest.testFind" />
         <item itemvalue="Gradle.ColorAttrTest" />
         <item itemvalue="Gradle.LinkedListTest" />
         <item itemvalue="Gradle.BetweenCharTest.CharTest" />
-        <item itemvalue="Gradle.BetweenCharTest" />
-        <item itemvalue="Gradle.PascalsTriangleTest.factTest" />
       </list>
     </recent_temporary>
   </component>
