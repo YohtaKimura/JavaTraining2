@@ -1,0 +1,14 @@
+Q: PassengerVehicle オブジェクトの定員を負の値に設定しようとした。
+A: IllegalArgumentException．自作する必要はない．メソッドの引数に不適切なものを与えたときにはこの例外を投げる．
+Q: オブジェクトがその初期値を設定するのに使用する設定ファイルに、文法エラーが見つかった。
+A: ParseException．初期値設定時にこの例外を投げる．設定ファイルの解析中に起きたエラーのため．
+Q: プログラマが指定した単語を文字列の配列から検索するメソッドが、その単語を発見できない．
+A: NoSuchElementException. 例外名の通り．文字列に限定する必要も少し感じるが……．
+Q: open メソッドへの指定されたファイルが存在しない。
+A: FileNotFoundException．
+Q: open メソッドへ指定されたファイルは存在するが、セキュリティにより使用できない。
+A: AccessDeniedException．
+Q: リモートのサーバプロセスにネットワークコネクションを確立しようとするが、リモートのマシンと接続できない。
+A: ConnectionException:Connection refused to host……．
+Q: リモートのサーバプロセスとのやり取りの最中に、ネットワークコネクションが切れる。
+A: ConnectionException: Connection timed out．切れたことはタイムアウトによって検出されるから．
