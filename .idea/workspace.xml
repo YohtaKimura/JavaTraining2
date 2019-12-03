@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch12/ILinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch12/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch12/ObjectNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch12/ex01/answer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch11/answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch11/ex03/answer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/ILinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/ex01/ILinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/ex01/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/ObjectNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/ex01/ObjectNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch12/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch12/ex01/LinkedListTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +142,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.LinkedListTest.testFindException">
+  <component name="RunManager" selected="Gradle.LinkedListTest">
     <configuration name="BetweenCharTest.CharTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -177,7 +188,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch11.ex01.LinkedListTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch12.ex01.LinkedListTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -234,11 +245,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LinkedListTest" />
         <item itemvalue="Gradle.LinkedListTest.testFindException" />
         <item itemvalue="Gradle.LinkedListTest.testFind" />
         <item itemvalue="Gradle.ColorAttrTest" />
         <item itemvalue="Gradle.LinkedListTest" />
-        <item itemvalue="Gradle.BetweenCharTest.CharTest" />
       </list>
     </recent_temporary>
   </component>

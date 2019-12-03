@@ -1,4 +1,4 @@
-package ch12;
+package ch12.ex01;
 
 final class ObjectNotFoundException extends Exception {
     private final Object object;
