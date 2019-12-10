@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/ex02/CountString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/ex03/DelimitedString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/ex04/TypeValueReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/ex05/CommaWriterByThreeDigits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +58,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
