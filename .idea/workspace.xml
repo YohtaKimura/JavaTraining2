@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch12/ex02/answer.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/ex01/CountChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch13/ex01/CountCharTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +57,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -86,18 +87,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch13.ex01" />
       <recent name="ch12" />
       <recent name="ch11.ex02" />
       <recent name="ch11.ex01" />
       <recent name="ch10.ex05" />
-      <recent name="ch10.ex01" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch12" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch11\ex03" />
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch10\ex04" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ch11.ex02" />
@@ -106,9 +104,12 @@
       <recent name="ch10.ex04" />
       <recent name="ch10.ex02" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch11\ex03" />
-      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch10\ex04" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch12" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -128,13 +129,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.LinkedListTest">
-    <configuration name="BetweenCharTest.CharTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CountCharTest.countCharTest">
+    <configuration name="ColorAttrTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch10.ex05.BetweenCharTest.CharTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch11.ex02.ColorAttrTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -149,12 +150,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ColorAttrTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CountCharTest.countCharTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch11.ex02.ColorAttrTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch13.ex01.CountCharTest.countCharTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -231,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CountCharTest.countCharTest" />
         <item itemvalue="Gradle.LinkedListTest" />
         <item itemvalue="Gradle.LinkedListTest.testFindException" />
         <item itemvalue="Gradle.LinkedListTest.testFind" />
         <item itemvalue="Gradle.ColorAttrTest" />
-        <item itemvalue="Gradle.LinkedListTest" />
       </list>
     </recent_temporary>
   </component>
