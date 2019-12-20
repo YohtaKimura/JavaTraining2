@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/ex01/ThreadNamePrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/ex02/ImprovedPrintServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/ex02/PrintJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/ex02/PrintQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/ex03/AddingStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/ex03/MultiThreadSaverOfResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch14/ex03/MultiThreadSaverOfResultTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch14/ex02/ImprovedPrintServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch14/ex02/ImprovedPrintServer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +69,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -87,7 +91,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ch12" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -95,15 +99,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch14.ex03" />
       <recent name="ch13.ex02" />
       <recent name="ch13.ex01" />
       <recent name="ch12" />
       <recent name="ch11.ex02" />
-      <recent name="ch11.ex01" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch11\ex03" />
-      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch10\ex04" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch12" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ch11.ex02" />
@@ -112,12 +119,9 @@
       <recent name="ch10.ex04" />
       <recent name="ch10.ex02" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch12" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch11\ex03" />
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch10\ex04" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -137,7 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadNamePrinter">
+  <component name="RunManager" selected="Gradle.MultiThreadSaverOfResultTest.countCharTest">
     <configuration name="ThreadNamePrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ch14.ex01.ThreadNamePrinter" />
       <module name="jpl.main" />
@@ -211,12 +215,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LinkedListTest.testFindException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MultiThreadSaverOfResultTest.countCharTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch12.LinkedListTest.testFindException&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex03.MultiThreadSaverOfResultTest.countCharTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -233,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MultiThreadSaverOfResultTest.countCharTest" />
         <item itemvalue="Application.ThreadNamePrinter" />
         <item itemvalue="Gradle.CountStringTest.countCharTest" />
         <item itemvalue="Gradle.CountCharTest.countCharTest" />
         <item itemvalue="Gradle.LinkedListTest" />
-        <item itemvalue="Gradle.LinkedListTest.testFindException" />
       </list>
     </recent_temporary>
   </component>
