@@ -9,6 +9,7 @@ public class MultiThreadSaverOfResultTest {
         multiThreadSaverOfResult.start();
         multiThreadSaverOfResult.print();
         // 結果がイミフでどう Assert したらいいのか……．並行に動いてる感は味わえた．
+        // 20191225 同期していい感じに大きくなっているのを確認．
         // Assert.assertEquals(2, operandStr.countStr("oge"));
     }
 }

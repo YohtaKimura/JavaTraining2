@@ -1,10 +1,12 @@
-package ch14.ex03;
+package ch14.ex04;
 
 final class AddingStore implements Runnable{
-    private int currentValue;
-    synchronized void operate(final int value) {
-        currentValue += value;
-        System.out.println(currentValue);
+    private static int currentValue;
+    synchronized static void operate(final int value) {
+        synchronized (AddingStore.class) {
+            currentValue += value;
+            System.out.println(currentValue);
+        }
     }
 
     public void print() {
