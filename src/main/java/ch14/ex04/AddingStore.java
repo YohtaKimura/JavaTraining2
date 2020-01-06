@@ -3,7 +3,7 @@ package ch14.ex04;
 final class AddingStore implements Runnable{
     private static int currentValue;
     synchronized static void operate(final int value) {
-        synchronized (AddingStore.class) {
+        synchronized (Integer.valueOf(value)) {
             currentValue += value;
             System.out.println(currentValue);
         }
