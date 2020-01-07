@@ -2,11 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch14/ex06/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch14/ex06/MessageThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch14/ex06/TimerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ch14/ex07/Babble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/ex08/Friendly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/ex08/SafeFriendly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/ex09/ThreadGroupUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/ex01/TypeDesc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/ex02/TypeDesc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/ex04/ClassAnnotations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/ex05/ClassAnnotations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/ex09/ClassViewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch16/ex04/ClassAnnotationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch16/ex05/ClassAnnotationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ch16/ex09/ClassViewerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch14/ex06/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch14/ex06/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch14/ex06/MessageThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch14/ex06/MessageThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch14/ex06/TimerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch14/ex06/TimerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch14/ex07/Babble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch14/ex07/Babble.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +82,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -89,18 +112,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch16.ex09" />
+      <recent name="ch16.ex05" />
+      <recent name="ch16.ex04" />
       <recent name="ch14.ex05" />
       <recent name="ch14.ex04" />
-      <recent name="ch14.ex03" />
-      <recent name="ch13.ex02" />
-      <recent name="ch13.ex01" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch12" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch11\ex03" />
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch10\ex04" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ch14.ex05" />
@@ -109,9 +129,12 @@
       <recent name="ch11.ex01" />
       <recent name="ch09.ex04" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch11\ex03" />
-      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch10\ex04" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\p000527032\Desktop\JavaTraining2\src\main\java\ch12" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -131,39 +154,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.MultiThreadSaverOfResultTest.countCharTest">
-    <configuration name="ThreadNamePrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch14.ex01.ThreadNamePrinter" />
+  <component name="RunManager" selected="Gradle.ThreadPoolTest">
+    <configuration name="Babble" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch14.ex07.Babble" />
       <module name="jpl.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch14.ex01.*" />
+          <option name="PATTERN" value="ch14.ex07.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="CountCharTest.countCharTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch13.ex01.CountCharTest.countCharTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="CountStringTest.countCharTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -225,13 +228,33 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ThreadPoolTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ThreadPoolTest" />
+        <item itemvalue="Application.Babble" />
         <item itemvalue="Gradle.MultiThreadSaverOfResultTest.countCharTest" />
         <item itemvalue="Gradle.MultiThreadSaverOfResultTest.countCharTest" />
         <item itemvalue="Gradle.MultiThreadSaverOfResultTest.countCharTest" />
-        <item itemvalue="Application.ThreadNamePrinter" />
-        <item itemvalue="Gradle.CountStringTest.countCharTest" />
       </list>
     </recent_temporary>
   </component>
