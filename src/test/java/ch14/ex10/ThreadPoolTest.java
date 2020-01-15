@@ -164,6 +164,7 @@ public class ThreadPoolTest {
         }
     }
 
+    // fail TODO: fix
     @Test
     public void testRepeatSimultaneousStop() {
         for (int i = 0; i < 5000; i++) {
@@ -227,6 +228,7 @@ public class ThreadPoolTest {
         return okCount;
     }
 
+    // fail TODO: fix
     @Test
     public void testStopBeforeStart() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -250,6 +252,7 @@ public class ThreadPoolTest {
         }
     }
 
+    // fail TODO: fix
     @Test
     public void testDispatchNullArgument() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -262,6 +265,7 @@ public class ThreadPoolTest {
         }
     }
 
+    // fail TODO: fix
     @Test
     public void testDispatchBeforeStart() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -274,6 +278,7 @@ public class ThreadPoolTest {
         }
     }
 
+    // fail TODO: fix
     @Test
     public void testSimpleDispatch() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -285,6 +290,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
+    // fail TODO: fix
     @Test
     public void testSimpleRepeatedDispatch() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -300,6 +306,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
+    // fail TODO: fix
     @Test
     public void testComplexRepeatedDispatch() {
         ThreadPool tp = new ThreadPool(10, 10);
@@ -315,6 +322,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
+    // fail TODO: fix
     @Test
     public void testComplexRepeatedDispatch2() {
         ThreadPool tp = new ThreadPool(10, 10);
@@ -338,6 +346,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
+    // fail TODO: fix
     @Test
     public void testLatchSimpleDispatch() {
         final int numberOfThreads = 10;
@@ -354,6 +363,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
+    // fail TODO: fix
     @Test
     public void testQueueSize() {
 
@@ -366,6 +376,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
+    // fail TODO: fix
     @Test
     public void testLatchComplexDispatch() {
         final int numberOfThreads = 10;
@@ -391,6 +402,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
+    // fail TODO: fix
     @Test
     public void testNumberOfThreads() {
         final Set<Thread> threads = Collections.synchronizedSet(new HashSet<Thread>());
@@ -420,6 +432,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
+    // fail TODO: fix
     @Test
     public void testTerminationOfThreads() {
         final List<Thread> threads = Collections.synchronizedList(new ArrayList<Thread>());
@@ -456,6 +469,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
+    // fail TODO: fix
     @Test
     public void testAllThreadsShouldWait() {
         // This is a test code which detects "busy-loop" implementation of
