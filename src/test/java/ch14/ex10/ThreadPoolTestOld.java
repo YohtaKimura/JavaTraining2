@@ -1,6 +1,5 @@
 /*
  * Copyright (C) 2012, 2013, 2016, 2017 RICOH Co., Ltd. All rights reserved.
- * Copyright (C) 2020 Yoshiki Shibata. All rights reserved.
  */
 package ch14.ex10;
 
@@ -16,7 +15,7 @@ import static org.junit.Assert.*;
  *
  * @author Yoshiki Shibata
  */
-public class ThreadPoolTest {
+public class ThreadPoolTestOld {
 
     /**
      * Simple counter task which counts the number of invocation of run()
@@ -149,8 +148,8 @@ public class ThreadPoolTest {
             } catch (IllegalStateException e) {
                 // This is the expected behavior: Do nothing.
             } catch (IllegalThreadStateException e) {
-                // This means that an illegal operation occurred,
-                // because either start() or stop() method couldn't
+                // This means that an illegal operation occurred, 
+                // because either start() or stop() method couldn't 
                 // detect a illegal state.
                 e.printStackTrace();
                 ok = true;
@@ -165,7 +164,7 @@ public class ThreadPoolTest {
         }
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testRepeatSimultaneousStop() {
         for (int i = 0; i < 5000; i++) {
@@ -229,7 +228,7 @@ public class ThreadPoolTest {
         return okCount;
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testStopBeforeStart() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -253,7 +252,7 @@ public class ThreadPoolTest {
         }
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testDispatchNullArgument() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -266,7 +265,7 @@ public class ThreadPoolTest {
         }
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testDispatchBeforeStart() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -279,7 +278,7 @@ public class ThreadPoolTest {
         }
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testSimpleDispatch() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -291,7 +290,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testSimpleRepeatedDispatch() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -307,7 +306,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testComplexRepeatedDispatch() {
         ThreadPool tp = new ThreadPool(10, 10);
@@ -323,7 +322,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testComplexRepeatedDispatch2() {
         ThreadPool tp = new ThreadPool(10, 10);
@@ -347,7 +346,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testLatchSimpleDispatch() {
         final int numberOfThreads = 10;
@@ -364,7 +363,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testQueueSize() {
 
@@ -377,7 +376,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testLatchComplexDispatch() {
         final int numberOfThreads = 10;
@@ -403,7 +402,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testNumberOfThreads() {
         final Set<Thread> threads = Collections.synchronizedSet(new HashSet<Thread>());
@@ -422,21 +421,18 @@ public class ThreadPoolTest {
         final int numberOfThreads = 10;
         ThreadPool tp = new ThreadPool(10, numberOfThreads);
         tp.start();
-        // Run more tasks than the requested number of threads.
-        for (int i = 0; i < numberOfThreads*2; i++) {
+        for (int i = 0; i < numberOfThreads; i++) {
             tp.dispatch(task);
         }
 
         // By the specification, stop() will wait for the terminations of all threads.
         tp.stop();
 
-        // If threads are pooled as requested correctly, then
-        // threads.size() must be equal to numberOfThreads.
         assertEquals(numberOfThreads, threads.size());
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testTerminationOfThreads() {
         final List<Thread> threads = Collections.synchronizedList(new ArrayList<Thread>());
@@ -473,11 +469,11 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
+    // fail TODO: fix
     @Test
     public void testAllThreadsShouldWait() {
         // This is a test code which detects "busy-loop" implementation of
-        // ThreadPool.
+        // ThreadPool. 
         ThreadPool tp = new ThreadPool(10, 10);
         tp.start();
 

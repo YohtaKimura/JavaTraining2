@@ -5,6 +5,10 @@
 
 package ch14.ex10;
 
+import java.util.LinkedList;
+import java.util.Objects;
+import java.util.Queue;
+
 /**
  * Simple Thread Pool class.
  *
@@ -24,27 +28,30 @@ package ch14.ex10;
  *
  *  @author Yoshiki Shibata
  */
-
 public class ThreadPool {
-    private WorkerThread[] threads;
-    private ThreadPoolQueue<Runnable> queue;
-    private boolean started;
+    private final int queueSize;
+    private final Queue<Thread> poolQueue;
+    private enum State {NEW, RUNNING, STOPPED}
+    private volatile State state = State.NEW;
 
     /**
      * Constructs ThreadPool.
      *
      * @param queueSize the max size of queue
      * @param numberOfThreads the number of threads in this pool.
+     *
      * @throws IllegalArgumentException if either queueSize or numberOfThreads
-     *             is less than 1
+     *         is less than 1
      */
     public ThreadPool(final int queueSize, final int numberOfThreads) {
-        if (queueSize < 1 || numberOfThreads < 1)
+        if (queueSize < 1 || numberOfThreads < 1) {
             throw new IllegalArgumentException();
-        threads = new WorkerThread[numberOfThreads];
-        queue = new ThreadPoolQueue<Runnable>(queueSize);
-        for (int i = 0; i < threads.length; i++)
-            threads[i] = new WorkerThread();
+        }
+        this.queueSize = queueSize;
+        poolQueue = new LinkedList<>();
+        for (int i = 0; i < numberOfThreads; i++) {
+            poolQueue.add(new Worker());
+        }
     }
 
     /**
@@ -53,78 +60,74 @@ public class ThreadPool {
      * @throws IllegalStateException if threads has been already started.
      */
     public void start() {
-        if (started)
-            throw new IllegalStateException("Already started.");
-        for (int i = 0; i < threads.length; i++) {
-            try {
-                threads[i] = new WorkerThread();
-                threads[i].start();
-            } catch (IllegalThreadStateException e) {
-                throw new IllegalStateException(e);
-            }
+    if (poolQueue.isEmpty()) {
+        throw new IllegalStateException();
+    }
+    if (poolQueue.stream().anyMatch(t -> t.isAlive())) {
+        throw new IllegalStateException();
         }
-        started = true;
+    synchronized (poolQueue) {
+        poolQueue.stream().filter(t -> !t.isAlive()).filter(t -> Objects.equals(t.getState(), Thread.State.NEW)).findAny().orElseThrow(() -> new IllegalStateException()).start();
+        state = State.RUNNING;
+    }
     }
 
     /**
-     * Stop all threads and wait for their terminations.
+     * Stop all threads gracefully and wait for their terminations.
+     * All requests dispatched before this method is invoked must complete
+     * and this method also will wait for their completion.
      *
      * @throws IllegalStateException if threads has not been started.
      */
     public void stop() {
-        for (WorkerThread thread : threads) {
-            if (thread.isAlive()) {
-                thread.stopRequest();
-                try {
-                    thread.join();
-                } catch (InterruptedException e) {
-                    System.err.println("InterruptedException on stop()");
-                }
-            } else {
+        if (poolQueue.isEmpty()) {
+            throw new IllegalStateException();
+        }
+        synchronized (poolQueue) {
+            // どう状態をふりわければいいかが分からない……．
+            if (poolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.NEW))) {
                 throw new IllegalStateException();
             }
+            if (Objects.equals(this.state, State.STOPPED)) {
+                throw new IllegalStateException();
+            }
+            poolQueue.stream().forEach( t -> {
+                try {
+                    t.join();
+                } catch (final InterruptedException e) {
+                    e.printStackTrace();
+                }
+            });
+            this.state = State.STOPPED;
         }
     }
 
     /**
-     * Executes the specified Runnable object, using a thread in the pool. run()
-     * method will be invoked in the thread. If the queue is full, then this
-     * method invocation will be blocked until the queue is not full.
+     * Executes the specified Runnable object, using a thread in the pool.
+     * run() method will be invoked in the thread. If the queue is full, then
+     * this method invocation will be blocked until the queue is not full.
      *
      * @param runnable Runnable object whose run() method will be invoked.
+     *
      * @throws NullPointerException if runnable is null.
      * @throws IllegalStateException if this pool has not been started yet.
      */
-    public synchronized void dispatch(Runnable runnable) {
+    public void dispatch(Runnable runnable) {
         if (runnable == null)
             throw new NullPointerException();
-        if (!started)
+        if (Objects.equals(this.state, State.NEW))
             throw new IllegalStateException("Not statrted.");
-        queue.add(runnable);
+        poolQueue.add((Thread) runnable);
     }
 
-    /**
-     * Worker thread.
-     *
-     *  https://www.ibm.com/developerworks/jp/java/library/j-jtp0730/
-     */
-    private class WorkerThread extends Thread {
-
-        private boolean stopping;
-
+    private class Worker extends Thread {
         @Override
         public void run() {
-            Runnable runnable = null;
-            while (!stopping) {
-                runnable = queue.poll();
-                if (runnable != null)
-                    runnable.run();
+            try {
+                Thread.sleep(100000);
+            } catch (final InterruptedException e) {
+                e.printStackTrace();
             }
-        }
-
-        private void stopRequest() {
-            stopping = true;
-            queue.stop();
         }
     }
 }
