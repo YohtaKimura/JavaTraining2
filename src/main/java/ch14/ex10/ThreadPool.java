@@ -77,7 +77,7 @@ public class ThreadPool {
         throw new IllegalStateException();
         }
         System.out.println("startInThreadPool");
-        threadPoolQueue.stream().findFirst().orElseThrow(() -> new IllegalStateException()).start();
+//        threadPoolQueue.stream().findFirst().orElseThrow(() -> new IllegalStateException()).start();
         state = State.RUNNING;
     }
     }
@@ -123,27 +123,36 @@ public class ThreadPool {
      * @throws NullPointerException if runnable is null.
      * @throws IllegalStateException if this pool has not been started yet.
      */
-    public synchronized void dispatch(Runnable runnable) {
+    public synchronized void dispatch(final Runnable runnable) {
         if (runnable == null)
             throw new NullPointerException();
         if (Objects.equals(this.state, State.NEW))
             throw new IllegalStateException("Not statrted.");
 //        taskPoolQueue.add(runnable);
         //implement available;
-        while (threadPoolQueue.stream().anyMatch(t -> t.isAlive())) {
-            threadPoolQueue.stream().findFirst().get().setRunnable(runnable);
+        Thread.State a = threadPoolQueue.element().getState();
+            while (threadPoolQueue.stream().filter(t -> Objects.equals(t.getState(), Thread.State.NEW)).anyMatch(t -> t.isNotTaskSet())) {
+                threadPoolQueue.stream().filter(t -> Objects.equals(t.getState(), Thread.State.NEW)).filter(t -> t.isNotTaskSet()).findFirst().get().setRunnable(runnable);
+            }
+            while (true) {
+                try {
+					wait();
+				} catch (InterruptedException e) { }
+			}
         }
-        notifyAll();
-    }
 
     private class Worker extends Thread {
-        private Runnable task;
+        private volatile Runnable task;
         public void setRunnable(final Runnable runnable) {
             this.task = runnable;
         }
         @Override
         public void run() {
             this.task.run();
+        }
+
+        public boolean isNotTaskSet() {
+            return Objects.isNull(task);
         }
     }
 }

@@ -254,7 +254,6 @@ public class ThreadPoolTest {
         }
     }
 
-    // test fail TODO: fix
     @Test
     public void testDispatchNullArgument() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -267,7 +266,7 @@ public class ThreadPoolTest {
         }
     }
 
-    // test fail TODO: fix
+
     @Test
     public void testDispatchBeforeStart() {
         ThreadPool tp = new ThreadPool(1, 1);

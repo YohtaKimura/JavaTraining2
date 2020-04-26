@@ -180,12 +180,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ThreadPoolTest.testRestartWithoutStop" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ThreadPoolTest.testSimpleDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testRestartWithoutStop&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testSimpleDispatch&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -200,12 +200,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ThreadPoolTest.testSimpleDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ThreadPoolTest.testSimpleRepeatedDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testSimpleDispatch&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testSimpleRepeatedDispatch&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -243,10 +243,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ThreadPoolTest.testSimpleDispatch" />
-        <item itemvalue="Gradle.ThreadPoolTest.testDispatchBeforeStart" />
-        <item itemvalue="Gradle.ThreadPoolTest.testDispatchNullArgument" />
-        <item itemvalue="Gradle.ThreadPoolTest.testRestartWithoutStop" />
         <item itemvalue="Gradle.ThreadPoolTest.testStopBeforeStart" />
+        <item itemvalue="Gradle.ThreadPoolTest.testDispatchNullArgument" />
+        <item itemvalue="Gradle.ThreadPoolTest.testSimpleRepeatedDispatch" />
+        <item itemvalue="Gradle.ThreadPoolTest.testDispatchBeforeStart" />
       </list>
     </recent_temporary>
   </component>
@@ -286,8 +286,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java</url>
-          <line>104</line>
-          <option name="timeStamp" value="36" />
+          <line>150</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
+          <line>288</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
