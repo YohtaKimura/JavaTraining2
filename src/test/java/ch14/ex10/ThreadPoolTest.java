@@ -165,7 +165,6 @@ public class ThreadPoolTest {
         }
     }
 
-    // test fail TODO: fix
     @Test
     public void testRepeatSimultaneousStop() {
         for (int i = 0; i < 5000; i++) {
@@ -233,6 +232,7 @@ public class ThreadPoolTest {
     @Test
     public void testStopBeforeStart() {
         ThreadPool tp = new ThreadPool(1, 1);
+        int c = activeThreadCount();
         try {
             tp.stop();
             fail();
@@ -241,6 +241,7 @@ public class ThreadPoolTest {
         }
     }
 
+    // Passed
     @Test
     public void testRestartWithoutStop() {
         ThreadPool tp = new ThreadPool(1, 1);

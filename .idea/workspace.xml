@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e2bea49-c481-4013-a02c-afde30dcdd5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch17/ex01/Usage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch17/ex02/DataHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch11/ex03/answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch11/ex03/answer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +89,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/git/io-service/io-tool/tool/src/io-tools" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -139,26 +139,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Usage">
-    <configuration name="Usage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch17.ex01.Usage" />
-      <module name="jpl.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ch17.ex01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClassViewerTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ThreadPoolTest.testSimpleDispatch">
+    <configuration name="ThreadPoolTest.testDispatchBeforeStart" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch16.ex09.ClassViewerTest.test&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testDispatchBeforeStart&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -173,12 +160,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HelloWorldTest.name" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ThreadPoolTest.testDispatchNullArgument" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch01.ex01.HelloWorldTest.name&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testDispatchNullArgument&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -193,12 +180,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MultiThreadSaverOfResultTest.countCharTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ThreadPoolTest.testRestartWithoutStop" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex05.MultiThreadSaverOfResultTest.countCharTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testRestartWithoutStop&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -213,12 +200,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ThreadPoolTest.testRepeatSimultaneousStop" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ThreadPoolTest.testSimpleDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testRepeatSimultaneousStop&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testSimpleDispatch&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ThreadPoolTest.testStopBeforeStart" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testStopBeforeStart&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -235,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Usage" />
-        <item itemvalue="Gradle.MultiThreadSaverOfResultTest.countCharTest" />
-        <item itemvalue="Gradle.ClassViewerTest.test" />
-        <item itemvalue="Gradle.HelloWorldTest.name" />
-        <item itemvalue="Gradle.ThreadPoolTest.testRepeatSimultaneousStop" />
+        <item itemvalue="Gradle.ThreadPoolTest.testSimpleDispatch" />
+        <item itemvalue="Gradle.ThreadPoolTest.testDispatchBeforeStart" />
+        <item itemvalue="Gradle.ThreadPoolTest.testDispatchNullArgument" />
+        <item itemvalue="Gradle.ThreadPoolTest.testRestartWithoutStop" />
+        <item itemvalue="Gradle.ThreadPoolTest.testStopBeforeStart" />
       </list>
     </recent_temporary>
   </component>
@@ -279,16 +286,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java</url>
-          <line>87</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
+          <line>104</line>
           <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
