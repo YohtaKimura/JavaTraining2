@@ -92,6 +92,7 @@ public class ThreadPoolTest {
             Thread[] threads = new Thread[activeCount];
             tg.enumerate(threads);
             for (Thread t : threads) {
+                System.out.println(t.getName());
                 if ("ReaderThread".equals(t.getName())) {
                     activeCount--;
                     break;
@@ -232,7 +233,6 @@ public class ThreadPoolTest {
     @Test
     public void testStopBeforeStart() {
         ThreadPool tp = new ThreadPool(1, 1);
-        int c = activeThreadCount();
         try {
             tp.stop();
             fail();
@@ -279,8 +279,7 @@ public class ThreadPoolTest {
         }
     }
 
-    // test fail TODO: fix
-    @Test
+   @Test
     public void testSimpleDispatch() {
         ThreadPool tp = new ThreadPool(1, 1);
         tp.start();
@@ -291,7 +290,6 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
     @Test
     public void testSimpleRepeatedDispatch() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -307,7 +305,6 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
     @Test
     public void testComplexRepeatedDispatch() {
         ThreadPool tp = new ThreadPool(10, 10);
@@ -323,7 +320,6 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
     @Test
     public void testComplexRepeatedDispatch2() {
         ThreadPool tp = new ThreadPool(10, 10);
@@ -356,9 +352,11 @@ public class ThreadPoolTest {
         LatchTask t = new LatchTask(numberOfThreads);
 
         for (int i = 0; i < numberOfThreads; i++) {
+            System.out.println(i);
             tp.dispatch(t);
         }
 
+        System.out.println("loop finished");
         t.waitForLatchCount();
         tp.stop();
         assertEquals(1, activeThreadCount());

@@ -30,19 +30,19 @@ import java.util.Queue;
  */
 public class ThreadPool {
     private final int queueSize;
-//    private volatile Queue<Runnable> taskPoolQueue;
+    //    private volatile Queue<Runnable> taskPoolQueue;
     private final Queue<Worker> threadPoolQueue;
+    private final StopTask stopTask = StopTask.getStopTask();
     private enum State {NEW, RUNNING, STOPPED}
     private volatile State state = State.NEW;
 
     /**
      * Constructs ThreadPool.
      *
-     * @param queueSize the max size of queue
+     * @param queueSize       the max size of queue
      * @param numberOfThreads the number of threads in this pool.
-     *
      * @throws IllegalArgumentException if either queueSize or numberOfThreads
-     *         is less than 1
+     *                                  is less than 1
      */
     public ThreadPool(final int queueSize, final int numberOfThreads) {
         if (queueSize < 1 || numberOfThreads < 1) {
@@ -61,25 +61,25 @@ public class ThreadPool {
      * @throws IllegalStateException if threads has been already started.
      */
     public synchronized void start() {
-    if (threadPoolQueue.isEmpty()) {
-        throw new IllegalStateException();
-    }
-    synchronized (threadPoolQueue) {
-    Thread.State a = threadPoolQueue.element().getState();
-    boolean b = threadPoolQueue.stream().anyMatch(t -> t.isAlive());
-    if (threadPoolQueue.stream().anyMatch(t -> t.isAlive() ||
-            Objects.equals(t.getState(), Thread.State.TIMED_WAITING) ||
-            Objects.equals(t.getState(), Thread.State.WAITING) ||
-            Objects.equals(t.getState(), Thread.State.BLOCKED) ||
-            Objects.equals(t.getState(), Thread.State.TERMINATED) ||
-            Objects.equals(t.getState(), Thread.State.RUNNABLE) ||
-            Objects.equals(t.getState(), Thread.State.TERMINATED))) {
-        throw new IllegalStateException();
+        if (threadPoolQueue.isEmpty()) {
+            throw new IllegalStateException();
         }
-        System.out.println("startInThreadPool");
-//        threadPoolQueue.stream().findFirst().orElseThrow(() -> new IllegalStateException()).start();
-        state = State.RUNNING;
-    }
+        synchronized (threadPoolQueue) {
+            Thread.State a = threadPoolQueue.element().getState();
+            boolean b = threadPoolQueue.stream().anyMatch(t -> t.isAlive());
+            if (threadPoolQueue.stream().anyMatch(t -> t.isAlive() ||
+                    Objects.equals(t.getState(), Thread.State.TIMED_WAITING) ||
+                    Objects.equals(t.getState(), Thread.State.WAITING) ||
+                    Objects.equals(t.getState(), Thread.State.BLOCKED) ||
+                    Objects.equals(t.getState(), Thread.State.TERMINATED) ||
+                    Objects.equals(t.getState(), Thread.State.RUNNABLE) ||
+                    Objects.equals(t.getState(), Thread.State.TERMINATED))) {
+                throw new IllegalStateException();
+            }
+            System.out.println("startInThreadPool");
+            threadPoolQueue.stream().forEach(t -> t.start());
+            state = State.RUNNING;
+        }
     }
 
     /**
@@ -100,15 +100,10 @@ public class ThreadPool {
             }
             if (Objects.equals(this.state, State.STOPPED)) {
                 throw new IllegalStateException();
+            };
+            while (!areAllThreadsStopped()) {
+                dispatch(this.stopTask);
             }
-            Thread.State a = threadPoolQueue.element().getState();
-            threadPoolQueue.stream().forEach(t -> {
-                try {
-                    t.join();
-                } catch (final InterruptedException e) {
-                    e.printStackTrace();
-                }
-            });
             this.state = State.STOPPED;
         }
     }
@@ -119,8 +114,7 @@ public class ThreadPool {
      * this method invocation will be blocked until the queue is not full.
      *
      * @param runnable Runnable object whose run() method will be invoked.
-     *
-     * @throws NullPointerException if runnable is null.
+     * @throws NullPointerException  if runnable is null.
      * @throws IllegalStateException if this pool has not been started yet.
      */
     public synchronized void dispatch(final Runnable runnable) {
@@ -130,29 +124,77 @@ public class ThreadPool {
             throw new IllegalStateException("Not statrted.");
 //        taskPoolQueue.add(runnable);
         //implement available;
-        Thread.State a = threadPoolQueue.element().getState();
-            while (threadPoolQueue.stream().filter(t -> Objects.equals(t.getState(), Thread.State.NEW)).anyMatch(t -> t.isNotTaskSet())) {
-                threadPoolQueue.stream().filter(t -> Objects.equals(t.getState(), Thread.State.NEW)).filter(t -> t.isNotTaskSet()).findFirst().get().setRunnable(runnable);
+        boolean a  = threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED));
+        if (threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED))) {
+         return;
+        }
+        while (!(threadPoolQueue.stream().anyMatch(t -> Objects.equals(t.getState(), Thread.State.WAITING)))) {
+            notifyAll();
+            try {
+                wait();
+            } catch (final InterruptedException e) {
+                e.printStackTrace();
             }
-            while (true) {
+        }
+        if (threadPoolQueue.stream().filter(t -> Objects.equals(t.getState(), Thread.State.WAITING)).anyMatch(t -> t.isNotTaskSet())) {
+            threadPoolQueue.stream().filter(t -> Objects.equals(t.getState(), Thread.State.WAITING)).filter(t -> t.isNotTaskSet()).findFirst().get().setRunnable(runnable);
+        }
+        notifyAll();
+    }
+
+    public synchronized boolean areAllThreadsStopped() {
+        return threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED));
+    }
+}
+
+class Worker extends Thread {
+    private volatile Runnable task = null;
+    private volatile boolean shouldStop = false;
+    private volatile StopTask stopTask = StopTask.getStopTask();
+
+    public synchronized void setRunnable(final Runnable runnable) {
+        this.task = runnable;
+        notifyAll();
+    }
+    @Override
+    public synchronized void run() {
+        while (!shouldStop) {
+            while (Objects.isNull(this.task)) {
                 try {
-					wait();
-				} catch (InterruptedException e) { }
-			}
+                    this.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                if (hasStopTask()) {
+                    this.shouldStop = true;
+                    break;
+                }
+                this.task.run();
+                setRunnable(null);
+            }
         }
+    }
 
-    private class Worker extends Thread {
-        private volatile Runnable task;
-        public void setRunnable(final Runnable runnable) {
-            this.task = runnable;
-        }
-        @Override
-        public void run() {
-            this.task.run();
-        }
+    public boolean isNotTaskSet() {
+        return Objects.isNull(task);
+    }
 
-        public boolean isNotTaskSet() {
-            return Objects.isNull(task);
-        }
+    boolean hasStopTask() {
+        return Objects.equals(this.task, this.stopTask);
+    }
+}
+
+class StopTask implements Runnable {
+    private static final StopTask stopTask = new StopTask();
+
+    private StopTask() {}
+
+    static StopTask getStopTask() {
+        return stopTask;
+    }
+
+    @Override
+    public void run() {
+
     }
 }
