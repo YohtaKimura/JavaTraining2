@@ -372,6 +372,7 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
+    // to fix
     @Test
     public void testLatchComplexDispatch() {
         final int numberOfThreads = 10;
@@ -406,6 +407,7 @@ public class ThreadPoolTest {
         Runnable task = new Runnable() {
             @Override
             public void run() {
+                String a = Thread.currentThread().toString();
                 threads.add(Thread.currentThread());
                 try {
                     Thread.sleep(500); // wait for a while
