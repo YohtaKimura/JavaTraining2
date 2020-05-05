@@ -102,8 +102,9 @@ public class ThreadPool {
                 throw new IllegalStateException();
             };
             while (!areAllThreadsStopped()) {
-                dispatch(this.stopTask);
+                dispatch(stopTask);
             }
+
             this.state = State.STOPPED;
         }
     }
@@ -124,25 +125,29 @@ public class ThreadPool {
             throw new IllegalStateException("Not statrted.");
 //        taskPoolQueue.add(runnable);
         //implement available;
-        boolean a  = threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED));
+        boolean a = threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED));
         if (threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED))) {
-         return;
+            return;
         }
         while (!(threadPoolQueue.stream().anyMatch(t -> Objects.equals(t.getState(), Thread.State.WAITING)))) {
             notifyAll();
-            try {
-                wait();
-            } catch (final InterruptedException e) {
-                e.printStackTrace();
+            if (threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED))) {
+                break;
             }
         }
+
         if (threadPoolQueue.stream().filter(t -> Objects.equals(t.getState(), Thread.State.WAITING)).anyMatch(t -> t.isNotTaskSet())) {
             threadPoolQueue.stream().filter(t -> Objects.equals(t.getState(), Thread.State.WAITING)).filter(t -> t.isNotTaskSet()).findFirst().get().setRunnable(runnable);
+
         }
         notifyAll();
+        while (!threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.WAITING))) {
+            if (Objects.equals(stopTask, runnable)) break;
+         }
     }
 
     public synchronized boolean areAllThreadsStopped() {
+        threadPoolQueue.stream().forEach(t -> System.out.println(t.getState().toString()));
         return threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED));
     }
 }
@@ -172,6 +177,7 @@ class Worker extends Thread {
                 this.task.run();
                 setRunnable(null);
             }
+        notifyAll();
         }
     }
 
@@ -184,7 +190,7 @@ class Worker extends Thread {
     }
 }
 
-class StopTask implements Runnable {
+class StopTask extends Thread implements Runnable {
     private static final StopTask stopTask = new StopTask();
 
     private StopTask() {}
@@ -195,6 +201,10 @@ class StopTask implements Runnable {
 
     @Override
     public void run() {
-
+        try {
+            join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

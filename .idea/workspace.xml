@@ -12,6 +12,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java" afterDir="false" />
@@ -139,13 +141,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ThreadPoolTest.testLatchSimpleDispatch">
-    <configuration name="ThreadPoolTest.testComplexRepeatedDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ThreadPoolTest.testLatchComplexDispatch">
+    <configuration name="ThreadPoolTest.testComplexRepeatedDispatch2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testComplexRepeatedDispatch&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testComplexRepeatedDispatch2&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -160,12 +162,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ThreadPoolTest.testComplexRepeatedDispatch2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ThreadPoolTest.testLatchComplexDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testComplexRepeatedDispatch2&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testLatchComplexDispatch&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -200,12 +202,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ThreadPoolTest.testSimpleDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ThreadPoolTest.testQueueSize" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testSimpleDispatch&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testQueueSize&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -220,12 +222,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ThreadPoolTest.testSimpleRepeatedDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ThreadPoolTest.testStopBeforeStart" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testSimpleRepeatedDispatch&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testStopBeforeStart&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -242,11 +244,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ThreadPoolTest.testLatchComplexDispatch" />
+        <item itemvalue="Gradle.ThreadPoolTest.testStopBeforeStart" />
+        <item itemvalue="Gradle.ThreadPoolTest.testQueueSize" />
         <item itemvalue="Gradle.ThreadPoolTest.testLatchSimpleDispatch" />
         <item itemvalue="Gradle.ThreadPoolTest.testComplexRepeatedDispatch2" />
-        <item itemvalue="Gradle.ThreadPoolTest.testComplexRepeatedDispatch" />
-        <item itemvalue="Gradle.ThreadPoolTest.testSimpleRepeatedDispatch" />
-        <item itemvalue="Gradle.ThreadPoolTest.testSimpleDispatch" />
       </list>
     </recent_temporary>
   </component>
@@ -283,6 +285,21 @@
           <url>jar://C:/Program Files/AdoptOpenJDK/jdk-11.0.4.11-hotspot/lib/src.zip!/java.base/java/lang/Thread.java</url>
           <line>936</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

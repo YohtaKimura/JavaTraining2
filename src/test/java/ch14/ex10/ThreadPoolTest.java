@@ -73,6 +73,9 @@ public class ThreadPoolTest {
         synchronized void waitForLatchCount() {
             while (currentCount < latchCount) {
                 try {
+                    System.out.println("hey");
+                    ThreadGroup tg  = Thread.currentThread().getThreadGroup();
+                    tg.list();
                     wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -229,7 +232,6 @@ public class ThreadPoolTest {
         return okCount;
     }
 
-    // test fail TODO: fix
     @Test
     public void testStopBeforeStart() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -241,7 +243,6 @@ public class ThreadPoolTest {
         }
     }
 
-    // Passed
     @Test
     public void testRestartWithoutStop() {
         ThreadPool tp = new ThreadPool(1, 1);
@@ -343,7 +344,6 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
     @Test
     public void testLatchSimpleDispatch() {
         final int numberOfThreads = 10;
@@ -352,17 +352,14 @@ public class ThreadPoolTest {
         LatchTask t = new LatchTask(numberOfThreads);
 
         for (int i = 0; i < numberOfThreads; i++) {
-            System.out.println(i);
             tp.dispatch(t);
         }
 
-        System.out.println("loop finished");
         t.waitForLatchCount();
         tp.stop();
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
     @Test
     public void testQueueSize() {
 
@@ -375,12 +372,12 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
     @Test
     public void testLatchComplexDispatch() {
         final int numberOfThreads = 10;
         ThreadPool tp = new ThreadPool(10, numberOfThreads);
         tp.start();
+
 
         LatchTask[] tasks = new LatchTask[10];
         for (int i = 0; i < tasks.length; i++) {
@@ -389,6 +386,7 @@ public class ThreadPoolTest {
 
         for (LatchTask t : tasks) {
             for (int i = 0; i < numberOfThreads; i++) {
+                System.out.println(i);
                 tp.dispatch(t);
             }
         }
