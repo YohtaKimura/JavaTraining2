@@ -475,13 +475,18 @@ public class ThreadPoolTest {
     // test fail TODO: fix
     @Test
     public void testAllThreadsShouldWait() {
+        ThreadGroup tg0 = Thread.currentThread().getThreadGroup();
+        tg0.list();
         // This is a test code which detects "busy-loop" implementation of
         // ThreadPool.
         ThreadPool tp = new ThreadPool(10, 10);
         tp.start();
 
+        ThreadGroup tg1 = Thread.currentThread().getThreadGroup();
+        tg1.list();
         // Now all threads should wait for dispatch without any busy-loop.
         ThreadGroup tg = Thread.currentThread().getThreadGroup();
+//        int a = tg.activeCount();
         Thread[] threads = new Thread[tg.activeCount()];
         tg.enumerate(threads);
 
@@ -493,6 +498,7 @@ public class ThreadPoolTest {
         }
 
         // Now all threads except this current thread should not be RUNNABLE.
+
         int runnable = 0;
         for (int i = 0; i < 100000; i++) {
             for (Thread t : threads) {
@@ -502,6 +508,11 @@ public class ThreadPoolTest {
 
                 // Excludes the ReaderThread of Eclipse.
                 if ("ReaderThread".equals(t.getName())) {
+                    continue;
+                }
+
+                // Excludes the worker thread of intellij idea
+                if (t.getName().contains("workers")) {
                     continue;
                 }
 
