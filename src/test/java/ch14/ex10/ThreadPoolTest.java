@@ -403,7 +403,6 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
     @Test
     public void testNumberOfThreads() {
         final Set<Thread> threads = Collections.synchronizedSet(new HashSet<Thread>());
@@ -437,7 +436,6 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
     @Test
     public void testTerminationOfThreads() {
         final List<Thread> threads = Collections.synchronizedList(new ArrayList<Thread>());
