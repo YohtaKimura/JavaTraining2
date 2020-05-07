@@ -185,7 +185,7 @@ public class ThreadPool {
 
 
     public synchronized boolean areAllThreadsStopped() {
-        threadPoolQueue.stream().forEach(t -> System.out.println(t.getState().toString()));
+        //threadPoolQueue.stream().forEach(t -> System.out.println(t.getState().toString()));
         return threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED));
     }
 
@@ -263,6 +263,6 @@ class StopTask implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("hey");
+        System.out.println("close task");
         }
 }

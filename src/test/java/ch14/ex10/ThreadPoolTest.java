@@ -472,7 +472,6 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // test fail TODO: fix
     @Test
     public void testAllThreadsShouldWait() {
         ThreadGroup tg0 = Thread.currentThread().getThreadGroup();

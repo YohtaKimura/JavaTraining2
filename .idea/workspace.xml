@@ -6,11 +6,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,12 +174,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ThreadPoolTest.testLatchSimpleDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ThreadPoolTest.testNumberOfThreads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testLatchSimpleDispatch&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testNumberOfThreads&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -196,12 +194,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ThreadPoolTest.testNumberOfThreads" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ThreadPoolTest.testQueueSize" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testNumberOfThreads&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testQueueSize&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -242,7 +240,7 @@
         <item itemvalue="Gradle.ThreadPoolTest.testTerminationOfThreads" />
         <item itemvalue="Gradle.ThreadPoolTest.testNumberOfThreads" />
         <item itemvalue="Gradle.ThreadPoolTest.testLatchComplexDispatch" />
-        <item itemvalue="Gradle.ThreadPoolTest.testLatchSimpleDispatch" />
+        <item itemvalue="Gradle.ThreadPoolTest.testQueueSize" />
       </list>
     </recent_temporary>
   </component>
