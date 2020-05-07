@@ -140,13 +140,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ThreadPoolTest.testLatchComplexDispatch">
-    <configuration name="ThreadPoolTest.testComplexRepeatedDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ThreadPoolTest.testLatchSimpleDispatch">
+    <configuration name="ThreadPoolTest.testLatchComplexDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testComplexRepeatedDispatch&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testLatchComplexDispatch&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -161,12 +161,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ThreadPoolTest.testLatchComplexDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ThreadPoolTest.testLatchSimpleDispatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testLatchComplexDispatch&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ch14.ex10.ThreadPoolTest.testLatchSimpleDispatch&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -243,11 +243,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ThreadPoolTest.testLatchSimpleDispatch" />
+        <item itemvalue="Gradle.ThreadPoolTest.testSimpleRepeatedDispatch" />
+        <item itemvalue="Gradle.ThreadPoolTest.testSimpleDispatch" />
         <item itemvalue="Gradle.ThreadPoolTest.testLatchComplexDispatch" />
         <item itemvalue="Gradle.ThreadPoolTest.testQueueSize" />
-        <item itemvalue="Gradle.ThreadPoolTest.testSimpleRepeatedDispatch" />
-        <item itemvalue="Gradle.ThreadPoolTest.testComplexRepeatedDispatch" />
-        <item itemvalue="Gradle.ThreadPoolTest.testSimpleDispatch" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +287,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java</url>
-          <line>241</line>
+          <line>261</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -297,28 +297,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="124" />
+          <line>359</line>
+          <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
-          <line>390</line>
-          <option name="timeStamp" value="125" />
+          <line>77</line>
+          <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java</url>
-          <line>166</line>
-          <option name="timeStamp" value="130" />
+          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java</url>
-          <line>167</line>
-          <option name="timeStamp" value="131" />
+          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java</url>
-          <line>168</line>
-          <option name="timeStamp" value="132" />
+          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="165" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

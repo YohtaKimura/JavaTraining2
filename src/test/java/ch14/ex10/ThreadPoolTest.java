@@ -63,6 +63,8 @@ public class ThreadPoolTest {
             notifyAll();
             while (currentCount < latchCount) {
                 try {
+                    System.out.println("Dead locked in run?");
+                    System.out.println(currentCount);
                     wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -73,9 +75,8 @@ public class ThreadPoolTest {
         synchronized void waitForLatchCount() {
             while (currentCount < latchCount) {
                 try {
-                    System.out.println("hey");
-                    ThreadGroup tg  = Thread.currentThread().getThreadGroup();
-                    tg.list();
+                    System.out.println("Dead locked in not run?");
+                    System.out.println(currentCount);
                     wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -355,6 +356,7 @@ public class ThreadPoolTest {
             tp.dispatch(t);
         }
 
+        tp.getThreadPoolQueue().stream().forEach(th -> System.out.println(th.getState()));
         t.waitForLatchCount();
         tp.stop();
         assertEquals(1, activeThreadCount());

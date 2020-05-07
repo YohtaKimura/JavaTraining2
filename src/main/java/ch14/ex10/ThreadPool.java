@@ -111,8 +111,8 @@ public class ThreadPool {
             while (!areAllThreadsStopped()) {
                 synchronized (this.threadPoolQueue) {
                     threadPoolQueue.stream().forEach(t -> {
-                        synchronized (t) {
-                            t.notifyAll();
+                        synchronized (t.lock) {
+                            t.lock.notifyAll();
                         }
                     });
                 }
@@ -163,69 +163,89 @@ public class ThreadPool {
                     }
               });
         }
+
+
+
         taskPoolQueue.offer(runnable);
-        synchronized (this.threadPoolQueue) {
-                threadPoolQueue.stream().forEach(t -> {
-                    Thread.State z = t.getState();
-                    synchronized (t) {
-                        t.notifyAll();
-                    }
-              });
+        threadPoolQueue.stream().forEach(t -> {
+            Thread.State z = t.getState();
+            if(Objects.equals(t.getState(), Thread.State.WAITING)) {
+                synchronized (t.lock) { t.lock.notifyAll();
+                }
             }
+        });
+
+        while (threadPoolQueue.stream().anyMatch(w -> Objects.equals(w.getState(), Thread.State.BLOCKED))) {
+            threadPoolQueue.stream().forEach(t -> {
+                Thread.State z = t.getState();
+                if(Objects.equals(t.getState(), Thread.State.WAITING)) {
+                    synchronized (t.lock) { t.lock.notifyAll();
+                    }
+                }
+            });
+        }
     }
+
 
     public synchronized boolean areAllThreadsStopped() {
         threadPoolQueue.stream().forEach(t -> System.out.println(t.getState().toString()));
         return threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED));
     }
+
+    public Queue<Worker> getThreadPoolQueue() {
+        return threadPoolQueue;
+    }
 }
 
 class Worker extends Thread {
-    private volatile Queue<Runnable> taskQueue;
-    private volatile Runnable task = null;
+    final Object lock = new Object();
+    private final Queue<Runnable> taskQueue;
     private volatile boolean shouldStop = false;
-    private volatile StopTask stopTask = StopTask.getStopTask();
+    private final StopTask stopTask = StopTask.getStopTask();
 
     Worker(final Queue<Runnable> taskQueue) {
         this.taskQueue = taskQueue;
     }
 
-    public synchronized void setRunnable(final Runnable runnable) {
-        this.task = runnable;
-        notifyAll();
+    public void taskQueueOffered() {
+        lock.notifyAll();
     }
 
     @Override
-    public synchronized void run() {
+    public void run() {
         while (!shouldStop) {
-            synchronized (taskQueue) {
-                while (taskQueue.isEmpty()) {
-                    try {
-                        this.wait();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+            Runnable task = null;
+            synchronized (lock) {
+            while (Objects.isNull(task)) {
+                task = taskQueue.poll();
+                try {
+                    lock.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
-                System.out.println("notified and taskQueue is not empty");
-                Runnable task = taskQueue.poll();
-                if (Objects.equals(task, stopTask)) {
+            }
+            System.out.println("notified and taskQueue is not empty");
+            lock.notifyAll();
+            }
+
+            if (Objects.equals(task, stopTask)) {
                     this.shouldStop = true;
                     break;
-                }
-                task.run();
-                notifyAll();
             }
-        notifyAll();
+            task.run();
+        }
+        synchronized (lock) {
+            lock.notifyAll();
         }
     }
 
-    public boolean isNotTaskSet() {
-        return Objects.isNull(task);
-    }
+//    public boolean isNotTaskSet() {
+//        return Objects.isNull(task);
+//    }
 
-    boolean hasStopTask() {
-        return Objects.equals(this.task, this.stopTask);
-    }
+//    boolean hasStopTask() {
+//        return Objects.equals(this.task, this.stopTask);
+//    }
 }
 
 class StopTask implements Runnable {
