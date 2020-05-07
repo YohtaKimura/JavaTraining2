@@ -72,9 +72,10 @@ public class ThreadPoolTest {
             }
         }
 
-        synchronized void waitForLatchCount() {
+        synchronized void waitForLatchCount(final ThreadPool tp) {
             while (currentCount < latchCount) {
                 try {
+                    System.out.println(tp.getTaskPoolQueue().size());
                     System.out.println("Dead locked in not run?");
                     System.out.println(currentCount);
                     wait();
@@ -352,12 +353,14 @@ public class ThreadPoolTest {
         tp.start();
         LatchTask t = new LatchTask(numberOfThreads);
 
+        tp.getThreadPoolQueue().stream().forEach(th -> System.out.println(th.getState()));
+
         for (int i = 0; i < numberOfThreads; i++) {
             tp.dispatch(t);
         }
 
         tp.getThreadPoolQueue().stream().forEach(th -> System.out.println(th.getState()));
-        t.waitForLatchCount();
+        t.waitForLatchCount(tp);
         tp.stop();
         assertEquals(1, activeThreadCount());
     }
@@ -395,7 +398,7 @@ public class ThreadPoolTest {
         }
 
         for (LatchTask t : tasks) {
-            t.waitForLatchCount();
+//            t.waitForLatchCount();
         }
 
         tp.stop();

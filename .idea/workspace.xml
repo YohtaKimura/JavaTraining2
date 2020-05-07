@@ -13,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java" afterDir="false" />
@@ -244,9 +245,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ThreadPoolTest.testLatchSimpleDispatch" />
+        <item itemvalue="Gradle.ThreadPoolTest.testLatchComplexDispatch" />
         <item itemvalue="Gradle.ThreadPoolTest.testSimpleRepeatedDispatch" />
         <item itemvalue="Gradle.ThreadPoolTest.testSimpleDispatch" />
-        <item itemvalue="Gradle.ThreadPoolTest.testLatchComplexDispatch" />
         <item itemvalue="Gradle.ThreadPoolTest.testQueueSize" />
       </list>
     </recent_temporary>
@@ -287,43 +288,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java</url>
-          <line>261</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ch14/ex10/ThreadPool.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
-          <line>359</line>
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="161" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="163" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ch14/ex10/ThreadPoolTest.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="165" />
+          <line>239</line>
+          <option name="timeStamp" value="170" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

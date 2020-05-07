@@ -82,6 +82,9 @@ public class ThreadPool {
             }
             System.out.println("startInThreadPool");
             threadPoolQueue.stream().forEach(t -> t.start());
+            while (!threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.WAITING))){
+                // wait for thread starting.
+            }
             state = State.RUNNING;
         }
     }
@@ -143,13 +146,12 @@ public class ThreadPool {
         }
 
         while (!(threadPoolQueue.stream().anyMatch(t -> Objects.equals(t.getState(), Thread.State.WAITING)))) {
-            synchronized (this.threadPoolQueue) {
-                threadPoolQueue.stream().forEach(t -> {
-                    synchronized (t) {
-                        t.notifyAll();
-                    }
-                });
-            }
+            threadPoolQueue.stream().forEach(t -> {
+                synchronized (t.lock) {
+                    t.lock.notifyAll();
+                }
+            });
+
 
             if (threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED))) {
                 break;
@@ -158,15 +160,13 @@ public class ThreadPool {
 
         while (Objects.equals(taskPoolQueue.size(), this.queueSize)) {
                 threadPoolQueue.stream().forEach(t -> {
-                    synchronized (t) {
-                        t.notifyAll();
+                    synchronized (t.lock) {
+                        t.lock.notifyAll();
                     }
               });
         }
 
-
-
-        taskPoolQueue.offer(runnable);
+        System.out.println(taskPoolQueue.offer(runnable));
         threadPoolQueue.stream().forEach(t -> {
             Thread.State z = t.getState();
             if(Objects.equals(t.getState(), Thread.State.WAITING)) {
@@ -195,20 +195,25 @@ public class ThreadPool {
     public Queue<Worker> getThreadPoolQueue() {
         return threadPoolQueue;
     }
+
+    public Queue<Runnable> getTaskPoolQueue() {
+        return taskPoolQueue;
+    }
 }
 
 class Worker extends Thread {
     final Object lock = new Object();
     private final Queue<Runnable> taskQueue;
     private volatile boolean shouldStop = false;
-    private final StopTask stopTask = StopTask.getStopTask();
+    private static final StopTask stopTask = StopTask.getStopTask();
 
     Worker(final Queue<Runnable> taskQueue) {
         this.taskQueue = taskQueue;
     }
 
-    public void taskQueueOffered() {
-        lock.notifyAll();
+    public boolean isTaskQueueEmpty() {
+        synchronized (lock) {lock.notifyAll();}
+        return taskQueue.isEmpty();
     }
 
     @Override
@@ -216,16 +221,19 @@ class Worker extends Thread {
         while (!shouldStop) {
             Runnable task = null;
             synchronized (lock) {
-            while (Objects.isNull(task)) {
-                task = taskQueue.poll();
-                try {
-                    lock.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                while (isTaskQueueEmpty()) {
+                    try {
+                        lock.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    task = taskQueue.poll();
+                    if (Objects.nonNull(task)) {
+                        System.out.println("notified and taskQueue is not empty");
+                        lock.notifyAll();
+                        break;
+                    }
                 }
-            }
-            System.out.println("notified and taskQueue is not empty");
-            lock.notifyAll();
             }
 
             if (Objects.equals(task, stopTask)) {
