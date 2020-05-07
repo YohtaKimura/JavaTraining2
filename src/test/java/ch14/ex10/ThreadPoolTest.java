@@ -377,13 +377,11 @@ public class ThreadPoolTest {
         assertEquals(1, activeThreadCount());
     }
 
-    // to fix
     @Test
     public void testLatchComplexDispatch() {
         final int numberOfThreads = 10;
         ThreadPool tp = new ThreadPool(10, numberOfThreads);
         tp.start();
-
 
         LatchTask[] tasks = new LatchTask[10];
         for (int i = 0; i < tasks.length; i++) {
@@ -398,7 +396,7 @@ public class ThreadPoolTest {
         }
 
         for (LatchTask t : tasks) {
-//            t.waitForLatchCount();
+            t.waitForLatchCount(tp);
         }
 
         tp.stop();

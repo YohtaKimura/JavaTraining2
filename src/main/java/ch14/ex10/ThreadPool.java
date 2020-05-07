@@ -134,13 +134,11 @@ public class ThreadPool {
      * @throws IllegalStateException if this pool has not been started yet.
      */
     public synchronized void dispatch(final Runnable runnable) {
-        if (runnable == null)
+        if (Objects.isNull(runnable))
             throw new NullPointerException();
         if (Objects.equals(this.state, State.NEW))
             throw new IllegalStateException("Not statrted.");
-//        taskPoolQueue.add(runnable);
-        //implement available;
-        boolean a = threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED));
+
         if (threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED))) {
             return;
         }
@@ -151,7 +149,6 @@ public class ThreadPool {
                     t.lock.notifyAll();
                 }
             });
-
 
             if (threadPoolQueue.stream().allMatch(t -> Objects.equals(t.getState(), Thread.State.TERMINATED))) {
                 break;
@@ -204,6 +201,7 @@ public class ThreadPool {
 class Worker extends Thread {
     final Object lock = new Object();
     private final Queue<Runnable> taskQueue;
+    private Runnable task;
     private volatile boolean shouldStop = false;
     private static final StopTask stopTask = StopTask.getStopTask();
 
@@ -211,50 +209,48 @@ class Worker extends Thread {
         this.taskQueue = taskQueue;
     }
 
-    public boolean isTaskQueueEmpty() {
+    public boolean canGetTaskFromQueue() {
         synchronized (lock) {lock.notifyAll();}
-        return taskQueue.isEmpty();
+        this.task = taskQueue.poll();
+        return Objects.nonNull(this.task);
     }
 
     @Override
     public void run() {
         while (!shouldStop) {
-            Runnable task = null;
+            this.task = null;
             synchronized (lock) {
-                while (isTaskQueueEmpty()) {
+                while (!canGetTaskFromQueue()) {
                     try {
                         lock.wait();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    task = taskQueue.poll();
-                    if (Objects.nonNull(task)) {
-                        System.out.println("notified and taskQueue is not empty");
-                        lock.notifyAll();
-                        break;
-                    }
+                }
+                System.out.println("notified and taskQueue is not empty");
+
+                if (Objects.equals(this.task, stopTask)) {
+                    this.shouldStop = true;
+                }
+
+                if (Objects.isNull(this.task)) {
+                    System.out.println("Bug");
+                }
+                synchronized (lock) {
+                    lock.notifyAll();
                 }
             }
+            this.task.run();
+            this.task = null;
 
-            if (Objects.equals(task, stopTask)) {
-                    this.shouldStop = true;
-                    break;
-            }
-            task.run();
-        }
         synchronized (lock) {
             lock.notifyAll();
         }
     }
-
-//    public boolean isNotTaskSet() {
-//        return Objects.isNull(task);
-//    }
-
-//    boolean hasStopTask() {
-//        return Objects.equals(this.task, this.stopTask);
-//    }
+    }
 }
+
+
 
 class StopTask implements Runnable {
     private static final StopTask stopTask = new StopTask();
