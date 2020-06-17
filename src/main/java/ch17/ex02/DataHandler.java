@@ -1,6 +1,3 @@
-/*
- * Copyright(C) 2014 Yutaka Kato
- */
 package ch17.ex02;
 
 import java.io.File;
